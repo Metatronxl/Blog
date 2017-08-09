@@ -16,7 +16,10 @@
 									</header>
                                     <h>{{ post.created_time }}</h>
 									<span class="image main"><img src="{% static 'blog/images/pic11.jpg' %}" alt="" /></span>
-                                    {{ post.body }}
+
+{#                                    {%  autoescape on %}#}
+                                    {{ post.body | safe }}
+{#                                    {% endautoescape %}#}
 								</div>
 							</section>
 
