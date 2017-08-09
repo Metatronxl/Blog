@@ -126,3 +126,7 @@ STATICFILES_DIRS = [
 
     os.path.join(BASE_DIR, 'static'),
 ]
+
+#配置MEDIA文件，用于富文本编译器上传图片，视频，文件等
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
