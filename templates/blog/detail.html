@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+        {% block main  %}
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>{{ post.title }}</h1>
+									</header>
+                                    <h>{{ post.created_time }}</h>
+									<span class="image main"><img src="{% static 'blog/images/pic11.jpg' %}" alt="" /></span>
+                                    {{ post.body }}
+								</div>
+							</section>
+
+					</div>
+        {% endblock %}
+
+
+</html>
